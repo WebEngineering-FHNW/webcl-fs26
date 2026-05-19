@@ -5,7 +5,9 @@
     <title>CSS Toggle</title>
     <style>
         :root {
+            --ON: initial;
             --OFF: ;
+            --toggle: var(--OFF);
         }
 
         .spaceToggle {
@@ -15,13 +17,13 @@
             padding: .2em 1em;
         }
 
-        /*.spaceToggle:hover {*/
-        /*    --toggle: var(--OFF);*/
-        /*}*/
+        .spaceToggle:hover {
+            --toggle: var(--ON);
+        }
 
-        /*:checked + .spaceToggle {*/
-        /*    --toggle: var(--OFF);*/
-        /*}*/
+        :checked + .spaceToggle {
+            --toggle: var(--OFF);
+        }
 
 
     </style>
