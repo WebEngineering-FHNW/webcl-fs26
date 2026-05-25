@@ -3,7 +3,7 @@ import { createServer }      from 'node:http';
 import { handleFileRequest } from "../S2-file-server/fileRequestHandler.js";
 
 import { channelName, updateActionName, updateActionParam } from "./sharedConstants.js";
-import { Observable }                                       from "../../../kolibri-dist-0.9.11/kolibri/observable.js";
+import { Observable }                                       from "../../../kolibri-dist-2026-02-15/kolibri/observable.js";
 
 
 const port      = 8080;
